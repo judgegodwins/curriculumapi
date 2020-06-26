@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body
+
+        form(action="/add-video", method="post")
+            input(type="text" placeholder="Admin Name" name="adminName")
+            input(type="password" placeholder="Password" name="password")
+            input(type="text" placeholder="classid" name="classId")
+            input(type="text" placeholder="subject" name="subject")
+            input(type="text" placeholder="Video title" name="title")
+            input(type="text" placeholder="URL" name="url")
+            input(type="submit", value="Add Video")
+        
+        form(action="/delete-video", method="post")
+            input(type="text" placeholder="Admin Name" name="adminName")
+            input(type="password" placeholder="Password" name="password")
+            input(type="text" placeholder="classId" name="classId")
+            input(type="text" placeholder="subject" name="subject")
+            input(type="text" placeholder="title" name="title")
+            input(type="submit", value="Delete Video")
