@@ -39,6 +39,7 @@ router.route('/add-video')
     .post(checkAdmin, (req, res) => {
         let { classId, subject, title, url } = req.body;
         url = url.replace('watch?v=', 'embed/');
+        url = url.replace('m.youtube', 'www.youtube')
 
         Video.findOne({ classId }, (err, data) => {
             let finish = (finishData) => {
